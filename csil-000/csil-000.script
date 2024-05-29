@@ -28,7 +28,6 @@ static = Sprite (istatic);
 static.SetX (Window.GetWidth ()  / 2 - istatic.GetWidth()  / 2);
 static.SetY ((Window.GetHeight() * yPos) - istatic.GetHeight() / 2);
 
-/*
 ic1 = Image ("1.png");
 ic1 = ic1.Scale (ic1.GetWidth() * s ,ic1.GetHeight() * s );
 c1 = Sprite (ic1);
@@ -64,7 +63,6 @@ ic6 = ic6.Scale (ic6.GetWidth() * s ,ic6.GetHeight() * s );
 c6 = Sprite (ic6);
 c6.SetX (Window.GetWidth ()  / 2 - ic6.GetWidth()  / 2);
 c6.SetY ((Window.GetHeight() * yPos) - ic6.GetHeight() / 2);
-*/
 
 ic7 = Image ("7.png");
 ic7 = ic7.Scale (ic7.GetWidth() * s ,ic7.GetHeight() * s );
