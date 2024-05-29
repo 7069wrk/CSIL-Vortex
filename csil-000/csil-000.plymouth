@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=CSILinux Vortex
+Description=CSILinux Vortex
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/csi-000
+ScriptFile=/usr/share/plymouth/themes/csi-000/csil-000.script
+UseFirmwareBackground=false
