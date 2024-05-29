@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=CSIL Vortex
+Description=CSIL logo with spinning colored stripes
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/csil-ubuntu
+ScriptFile=/usr/share/plymouth/themes/csil-vortex/csil-vortex.script
+UseFirmwareBackground=false
