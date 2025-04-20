@@ -20,7 +20,7 @@ fi
 echo -n "copying theme in /usr/share/plymouth/themes/   ..................   " ;
 cp -r `dirname $0`/$fldr /usr/share/plymouth/themes/ ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occoured in moving `dirname $0`/csi-000 to /usr/share/plymouth/themes/" ;
+	echo -e "\nan error occoured in COPYING `dirname $0`/csi-000 to /usr/share/plymouth/themes/" ;
 	exit 1;
 fi
 echo "[done]" ;
@@ -31,7 +31,7 @@ echo "[done]" ;
 echo -n "updating plymouth themes alternatives   ........................   " ;
 update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/csi-000/csil-000.plymouth 100  &> /dev/null ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occurred installing alternative in /usr/share/plymouth/themes/default.plymouth" ;
+	echo -e "\nan error occurred UPDATING alternative in /usr/share/plymouth/themes/default.plymouth" ;
 	exit 1;
 fi
 echo "[done]" ;
@@ -42,7 +42,7 @@ echo "[done]" ;
 echo -n "setting CSILinux Vortex as default plymouth theme   .................   " ;
 update-alternatives --set default.plymouth /usr/share/plymouth/themes/csi_000/csil-000.plymouth  &> /dev/null ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occurred setting alternative in /usr/share/plymouth/themes/default.plymouth";
+	echo -e "\nan error occurred SETTING alternative in /usr/share/plymouth/themes/default.plymouth";
 	exit 1;
 fi
 echo "[done]" ;
